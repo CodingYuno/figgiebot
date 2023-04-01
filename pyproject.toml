@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "figgiebot"
+version = "1.0.1"
+authors = [
+  { name="CodingYuno"},
+]
+description = "Create bots to play the card game Figgie at https://figgie.com/"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+dependencies = [
+    "beautifulsoup4>=4.9.3",
+    "selenium>=4.7.2",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/CodingYuno/figgiebot"
+"Issue Tracker" = "https://github.com/CodingYuno/figgiebot/issues/"
+
+[tool.setuptools.packages.find]
+include = ["figgiebot", "figgiebot.*"]
